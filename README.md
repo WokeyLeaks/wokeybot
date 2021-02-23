@@ -1,6 +1,6 @@
 # WokeyBot
 
-Customised version of the Documentation and demo site for the TwitterOAuth PHP library built by https://github.com/abraham
+https://github.com/abraham built the TwitterOAuth library. We've customised the version of the Documentation and demo site for the TwitterOAuth PHP library to create WokeyBot.
 
 ## Development
 
@@ -27,19 +27,3 @@ Customised version of the Documentation and demo site for the TwitterOAuth PHP l
 1. Register a [Twitter app](https://developer.twitter.com/apps).
 1. Set Heroku config vars for `CONSUMER_KEY`, `CONSUMER_SECRET`, and `OAUTH_CALLBACK`. Optionally `GOOGLE_ANALYTICS_ID` and `TEMPLATE_CACHE_ENABLED`.
 1. Push code to Heroku.
-
-## Update tweet data
-
-1. Install `twurl`
-   ```console
-   gem install twurl
-   ```
-1. Update tweet data
-   ```console
-   twurl "/1.1/users/show.json?screen_name=jack&include_entities=true&tweet_mode=extended" > jack.json
-   twurl "/1.1/statuses/show.json?id=20&include_entities=true&tweet_mode=extended" > 20.json
-   ```
-1. Format the data
-   ```console
-   npm run fix
-   ```
