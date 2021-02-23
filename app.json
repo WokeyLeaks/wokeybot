@@ -1,10 +1,10 @@
 {
-  "name": "TwitterOAuth Demo",
-  "description": "Demo of the most popular PHP library for use with the Twitter OAuth REST API.",
-  "keywords": ["twitter", "api", "oauth", "demo", "rest", "social"],
-  "website": "https://twitteroauth.com",
-  "repository": "https://github.com/abraham/twitteroauth-com",
-  "logo": "https://raw.githubusercontent.com/abraham/twitteroauth-com/master/images/twitter-logo-blue.png",
+  "name": "WokeyBot",
+  "description": "Blocks 'woke' user accounts from Twitter.",
+  "keywords": ["WokeyLeaks", "woke", "oauth", "rest", "social"],
+  "website": "https://WokeyLeaks.net",
+  "repository": "https://github.com/WokeyLeaks/wokeybot",
+  "logo": "https://avatars.githubusercontent.com/u/79455589?s=60&v=4",
   "success_url": "/",
   "stack": "heroku-18",
   "env": {
