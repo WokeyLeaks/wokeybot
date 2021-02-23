@@ -1,6 +1,6 @@
 # WokeyBot
 
-Customised the Documentation and demo site for the TwitterOAuth PHP library built by https://github.com/abraham
+Customised version of the Documentation and demo site for the TwitterOAuth PHP library built by https://github.com/abraham
 
 ## Development
 
