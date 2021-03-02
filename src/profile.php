@@ -41,7 +41,7 @@ $blockees = $connection->get('lists/members', [
 
 foreach($blockees as $names)
     {
-        echo $names['user']['screen_name'];
+        print $names['user']['screen_name'];
     }
 
 $data = [
