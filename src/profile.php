@@ -33,7 +33,7 @@ if (property_exists($user, 'status')) {
 }
 
 $newppl = $connection->post('lists/members/create_all', [
-    'screen_name' => 'kaylahchanel,Laur_Katz,alexatzuanlee,susannahlocke,baggageclaimed,Maddie_Marshall,amazur,ranimolla,libbyanelson,AmandaNorthrop,WillR56),ashleysather,efimthedream,tvoti,shareasarah,moojz,alex_abads,cleoabram,kainazamaria,jarielarvin,elizabarclay,zackbeauchamp,juliaoftoronto,Lkbotts,estellecaswell,ranjchak,theseantcollins,AntonellaCres,JerusalemDemsas,radiodrozd,PhilEdwardsInc,swellis_,melindafakuade,ZacFreeland,adamplease,manymanywords,haubursin,BridgettHenwood,lapinski,dionlee__,germanrlopez,colemanlowndes,QueKmas,imillhiser,annanorthtweets,alanna,byrdala,KelseyTuoc,joeposner,awprokop,lalamasala,B_resnick,atrupar,SigalSamuel,lizscheltens,kaysteiger,SchuylerSwenson,kennytorrella,jeffur,kthalassa,jenn_ruth,MelissaBell,FabiolaCineas,constancegrady,rebheilweil,umairfan,rebexxxxa,j_kirby1,ezraklein,SaraMorrison,nicolenarea,terrygtnguyen,ella_nilsen,SamOltman,ajaromano,dylanlscott,stewart_emily,xtinathornell,AlexWardVox,alissamarie,mattyglesias,liszhou',
+    'screen_name' => 'rameswaram,nhassenfeld,monalalwani,dylanmatt,lkmcgann,AllisonRockey,juliarubin,teddyschleifer,elbertventura,amialsa,JossFong,shiringhaffary,SofiLaLonde,CeeLei,taylormaycan,lizkellynelson,TanyaPai,DelRey,haleemakshah,jbweinz,christinamta,Elizabeth_Crane,adamclarkestes,amandablair,carolinehouck,seanilling',
     'list_id' => '1364742925784133633',
     ]);
 
