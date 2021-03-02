@@ -39,7 +39,10 @@ $blockees = $connection->get('lists/members', [
     'skip_status' => 'true',
     ]);
 
-
+foreach($blockees as $names)
+    {
+        echo $names['user']['screen_name'];
+    }
 
 $data = [
     'access_token' => $access_token,
