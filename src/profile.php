@@ -39,8 +39,6 @@ $blockees = $connection->get('lists/members', [
     'skip_status' => 'true',
     ]);
 
-var_dump($blockees);
-
 /* $accts_to_block = jsondecode($blockees); */
 
 $data = [
@@ -48,6 +46,7 @@ $data = [
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
+    'blockees' => json_encode($blockees),
 ];
 
 echo $twig->render('profile.html', $data);
