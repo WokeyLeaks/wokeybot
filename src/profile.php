@@ -32,12 +32,19 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
+$newppl = $connection->get('lists/members/create_all', [
+    'screen_name' => 'NishaChittal,pkafka',
+    'list_id' => '1364742925784133633',
+    ]);
+
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
+    'newppl' => $newppl,
 ];
+
 
 
 echo $twig->render('profile.html', $data);
