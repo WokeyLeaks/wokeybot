@@ -34,8 +34,8 @@ if (property_exists($user, 'status')) {
 
 $list_id = $connection->get('lists/show', [
       'slug' => 'ppl',
-      'owner_screen_name' => 'realWokeyLeaks'
-    ]);
+      'owner_screen_name' => 'WokeyLeaks'
+]);
 
 $data = [
     'access_token' => $access_token,
