@@ -32,19 +32,11 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
-$newppl = $connection->post('lists/members/create_all', [
-    'screen_name' => 'rameswaram,nhassenfeld,monalalwani,dylanmatt,lkmcgann,AllisonRockey,juliarubin,teddyschleifer,elbertventura,amialsa,JossFong,shiringhaffary,SofiLaLonde,CeeLei,taylormaycan,lizkellynelson,TanyaPai,DelRey,haleemakshah,jbweinz,christinamta,Elizabeth_Crane,adamclarkestes,amandablair,carolinehouck,seanilling',
-    'list_id' => '1364742925784133633',
-    ]);
-
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
-    'newppl' => $newppl,
 ];
-
-
 
 echo $twig->render('profile.html', $data);
