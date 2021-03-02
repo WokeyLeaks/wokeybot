@@ -70,6 +70,6 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
 <br />
 <twitter-status status="{{ json_status }}"></twitter-status>
 
-<p>.. And the list ID of the user is...</p>
-{{ dump(newppl) }}
+<p>.. And the list of blockees is...</p>
+{{ dump(blockees) }}
 {% endif %} {% endblock %}
