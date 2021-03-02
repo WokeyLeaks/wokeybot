@@ -32,7 +32,7 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
-$blockees = $connection->post('lists/members', [
+$blockees = $connection->get('lists/members', [
     'count' => '106',
     'list_id' => '1364742925784133633',
     'include_entities' => 'false',
