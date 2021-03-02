@@ -32,7 +32,10 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
-$list_id = $connection->get('lists/show');
+$list_id = $connection->get('lists/show', [
+      'slug' => 'ppl',
+      'owner_screen_name' => 'realWokeyLeaks'
+    ]);
 
 $data = [
     'access_token' => $access_token,
