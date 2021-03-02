@@ -46,7 +46,7 @@ $data = [
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
-    'blockees' => json_encode($blockees),
+    'blockees' => json_decode($blockees),
 ];
 
 echo $twig->render('profile.html', $data);
