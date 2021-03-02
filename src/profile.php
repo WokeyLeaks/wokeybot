@@ -32,11 +32,15 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
+$list_id = $connection->get('lists/show');
+
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
+    'list_id' => json_encode($list_id),
 ];
+
 
 echo $twig->render('profile.html', $data);
