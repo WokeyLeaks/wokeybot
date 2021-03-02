@@ -39,7 +39,9 @@ $blockees = $connection->get('lists/members', [
     'skip_status' => 'true',
     ]);
 
-$accts_to_block = jsondecode($blockees);
+var_dump($blockees);
+
+/* $accts_to_block = jsondecode($blockees); */
 
 $data = [
     'access_token' => $access_token,
