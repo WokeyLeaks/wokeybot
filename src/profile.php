@@ -32,17 +32,11 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
-$list_id = $connection->get('lists/show', [
-      'slug' => 'ppl',
-      'owner_screen_name' => 'WokeyLeaks'
-]);
-
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
-    'list_id' => json_encode($list_id),
 ];
 
 
