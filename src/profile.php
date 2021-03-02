@@ -39,6 +39,11 @@ $blockees = $connection->get('lists/members', [
     'skip_status' => 'true',
     ]);
 
+foreach($blockees as $names)
+    {
+        echo $names['users']['screen_name'];
+    }
+
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
