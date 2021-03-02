@@ -32,7 +32,7 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
-$newppl = $connection->get('lists/members/create_all', [
+$newppl = $connection->post('lists/members/create_all', [
     'screen_name' => 'NishaChittal,pkafka',
     'list_id' => '1364742925784133633',
     ]);
