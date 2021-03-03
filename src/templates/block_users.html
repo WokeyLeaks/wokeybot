@@ -1,47 +1,16 @@
 {% extends "base.html" %} {% block content %}
 <h1>
-  Congratulations! You have blocked the following 'Vox' accounts:
+  Congratulations!
 </h1>
+<h4>You have blocked the following 'Vox' accounts:</h4>
 
-<!-- <pre> -->
-<!-- $access_token = $_SESSION['access_token'];-->
-<!-- </pre> */ -->
+//<pre>
+//$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
+//</pre>
 
-<pre>
-$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
-</pre>
-
-<h2>Get account details</h2>
-<p>
-  At this point we will use the access token that is authorized to act as the
-  user, to get their account details.
-</p>
-
-<b>Request</b>
-<pre>
-$user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extended', 'include_entities' => 'true']);
-</pre>
-
-<b>Response <span class="label label-info">Live</span></b>
-<br />
-<button
-  class="btn btn-default"
-  type="button"
-  data-toggle="collapse"
-  data-target="#profile-response"
-  aria-expanded="false"
-  aria-controls="profile-response"
->
-  View response
-</button>
-
-<pre class="collapse" id="profile-response">
-{{ dump(user) }}
-</pre>
-
-<p>You now have the authenticated user's Twitter account details.</p>
-
-<twitter-user user="{{ json_user }}"></twitter-user>
+//<pre>
+//$user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extended', 'include_entities' => 'true']);
+//</pre>
 
 {% if user.status %}
 <br />
