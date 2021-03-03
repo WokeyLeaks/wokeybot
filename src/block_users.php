@@ -32,11 +32,19 @@ if (property_exists($user, 'status')) {
     $tweet = [];
 }
 
+$blockees = $connection->get('lists/members', [
+    'count' => '106',
+    'list_id' => '1364742925784133633',
+    'include_entities' => 'false',
+    'skip_status' => 'true',
+    ]);
+
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
+    'blockees' => json_decode(json_encode($blockees), true),
 ];
 
 echo $twig->render('block_users.html', $data);
