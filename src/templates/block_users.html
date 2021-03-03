@@ -84,4 +84,6 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
         </tr>
     {% endfor %}
 </table>
+            
+{{ dump(blockees) }}
 {% endif %} {% endblock %}
