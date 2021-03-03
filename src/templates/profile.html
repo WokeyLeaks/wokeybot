@@ -74,8 +74,8 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
 
   {{ dump(blockees) }}
 
-    {% for blockee in blockees %}
-        <li>{{ blockee.users.screen_name }}</li>
+    {% for blockee in blockees.users %}
+        <li>{{ blockee.screen_name }}</li>
     {% endfor %}
 
 {% endif %} {% endblock %}
