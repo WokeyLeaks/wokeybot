@@ -3,20 +3,8 @@
   Congratulations!
 </h1>
 <h4>You have blocked the following 'Vox' accounts:</h4>
-
-//<pre>
-//$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
-//</pre>
-
-//<pre>
-//$user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extended', 'include_entities' => 'true']);
-//</pre>
-
 {% if user.status %}
 <br />
-<twitter-status status="{{ json_status }}"></twitter-status>
-
-<p>.. And the list of blockees is...</p>
 
 <style type="text/css">
   table    { width: 100%; background-color: #1DA1F2; color: #FFF; margin-left: auto; margin-right: auto; }
