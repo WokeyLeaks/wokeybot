@@ -78,6 +78,8 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
 </style>
 <table>
     {% for blockee in blockees.users %}
+  
+  <twitter-user user="{{ blockee }}"></twitter-user>
         <tr>
           <td>{{ blockee.screen_name }}</td>
           <td><img src="{{blockee.profile_image_url_https}}" width="30" height="30"></td>
