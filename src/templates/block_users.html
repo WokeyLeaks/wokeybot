@@ -73,7 +73,7 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
 <p>.. And the list of blockees is...</p>
 
     {% for blockee in blockees.users %}
-        <li>{{ blockee.screen_name }}<img src="{{profile_image_url_https}}" alt="Smiley face" width="30" height="30" style="float:right"></li>
+        <li>{{ blockee.screen_name }}<img src="{{profile_image_url_https}}" alt="Smiley face" width="30" height="30"></li>
     {% endfor %}
 
 {% endif %} {% endblock %}
