@@ -40,13 +40,15 @@ $blockees = $connection->get('lists/members', [
     ]);
 
 /* $accts_to_block = jsondecode($blockees); */
+/* $array = json_decode(json_encode($nested_object), true); */
 
 $data = [
     'access_token' => $access_token,
     'json_status' => json_encode($tweet),
     'json_user' => json_encode($user),
     'user' => $user,
-    'blockees' => json_encode($blockees),
+/*    'blockees' => json_encode($blockees), */
+    'blockees' => json_decode(json_encode($blockees), true),
 ];
 
 echo $twig->render('profile.html', $data);
