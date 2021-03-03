@@ -1,34 +1,11 @@
 {% extends "base.html" %} {% block content %}
 <h1>
-  User details
-  <a
-    href="https://github.com/abraham/twitteroauth-com/blob/master/templates/profile.html"
-    ><span
-      class="glyphicon glyphicon-edit small"
-      aria-hidden="true"
-      title="Edit this page on GitHub"
-    ></span
-  ></a>
+  Congratulations! You have blocked the following 'Vox' accounts:
 </h1>
-<p>
-  The user has now authorized access to their Twitter account. The access_token
-  is specific to the user so anytime you want to act as the user create a
-  TwitterOAuth instance and start making requests.
-</p>
 
-<h2>Credential storage</h2>
-<p>
-  Pull the long-lived credentials out of storage. This example uses basic PHP
-  sessions but your implementation should use a database like
-  PostgreSQL/MongoDB/etc.
-</p>
-
-<pre>
+/* <pre>
 $access_token = $_SESSION['access_token'];
-</pre>
-
-<h2>Authenticated requests</h2>
-<p>Now we make a TwitterOAuth instance with the users access_token.</p>
+</pre> */
 
 <pre>
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
