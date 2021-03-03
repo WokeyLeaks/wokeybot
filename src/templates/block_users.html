@@ -71,7 +71,12 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
 <twitter-status status="{{ json_status }}"></twitter-status>
 
 <p>.. And the list of blockees is...</p>
-<table border="2px solid white" background-color="#1DA1F2" color="white">
+
+<style type="text/css">
+  table    { background-color:#1DA1F2; color:#FFF; }
+  table td { border:inset 1px #FFF; }
+</style>
+<table>
     {% for blockee in blockees.users %}
         <tr>
           <td>{{ blockee.screen_name }}</td>
