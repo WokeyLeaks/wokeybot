@@ -71,9 +71,12 @@ $user = $connection->get('account/verify_credentials', ['tweet_mode' => 'extende
 <twitter-status status="{{ json_status }}"></twitter-status>
 
 <p>.. And the list of blockees is...</p>
-
+<table>
     {% for blockee in blockees.users %}
-        <li>{{ blockee.screen_name }}<img src="{{blockee.profile_image_url_https}}" width="30" height="30"></li>
+        <tr>
+          <td>{{ blockee.screen_name }}</td>
+          <td><img src="{{blockee.profile_image_url_https}}" width="30" height="30"></td>
+        </tr>
     {% endfor %}
-
+</table>
 {% endif %} {% endblock %}
