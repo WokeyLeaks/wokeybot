@@ -47,34 +47,5 @@ $data = [
     'blockees' => json_decode(json_encode($blockees), true),
 ];
 
-/* echo $twig->render('block_users.html', $data); */
-
-<style type="text/css">
-  table    { width: 100%; background-color: #1DA1F2; color: #FFF; margin-left: auto; margin-right: auto; }
-  table td { border:inset 2px #FFF; text-align:center;}
-  h1 h4    {text-align: center; }
-  .center {text-align: center; border: 2px solid #1DA1F2;}
-</style>
-
-<div class="center">
-  <h1>Congratulations!</h1>
-  <h4>You have blocked the following 'Vox' accounts:</h4>
-
-
-{% if user.status %}
-<br />
-
-
-<table>
-    {% for blockee in blockees.users %}
-        <tr>
-          <td > @{{ blockee.screen_name }} </td>
-          <td> <img src="{{blockee.profile_image_url_https}}" width="30" height="30 vertical-align="middle" border-radius="50%"></td>
-          <td> Bio: {{ blockee.description }} </td>
-          <td> Followers: {{ blockee.followers_count }} </td>
-        </tr>
-    {% endfor %}
-</table>
-</div>
-
+echo $twig->render('block_users.html', $data);
 
