@@ -42,4 +42,6 @@ if (200 == $connection->getLastHttpCode()) {
     exit;
 }
 
-echo $twig->render("callback.html", ["access_token" => $access_token]);
+/* echo $twig->render("callback.html", ["access_token" => $access_token]); */
+$_SESSION['access_token'] = $access_token;
+
